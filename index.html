@@ -6,6 +6,24 @@
     <link rel="stylesheet" href="css/calculos.css" />
     <title>Factorial de n</title>
     <script src="js/calculos.js"></script>
+    <script>
+        var n;
+        var factorial= factorial(n);
+        var a =10;
+        var b =1000;
+
+        var tmultiplos = multiplosDeHasta (a,b);
+
+        var x = 7;
+        var y = 100;
+        var suma = sumar (x,y);
+
+        var p1 = 2;
+        var p2 = 5;
+        var producto =multiplicar(p1,p2);
+
+
+    </script>
 </head>
 
 <body>
@@ -20,7 +38,8 @@
             <p>
                 <input type="button" onclick="n = leerNumero()" value="Primer número" />
                 <input type="button" onclick="m = leerNumero()" value="Segundo número" />
-                <input type="button" onclick="mostrarMultipols(n,m)" value="Mostrar resultados" />
+                <!--<input type="button" onclick="mostrarMultiplos(n,m)" value="Mostrar resultados" />-->
+                <input type="button" onclick="mostrarResultados('multiplo',n,m)" value="Mostrar resultados" />
             </p>
 
             <table class="resultados">
@@ -46,8 +65,10 @@
         <article class="botones">
             <h2>Factorial de 'n'</h2>
             <p>
-                <input type="button" onclick="n = leerNumero()" value="Primer número" />
-                <input type="button" onclick="mostrarFactorial(n)" value="Mostrar resultados" />
+                <input type="button" onclick="pepe = leerNumero()" 
+                value="Primer número" />
+                <input type="button" onclick="mostrarResultados('factorial',pepe)"
+                 value="Mostrar resultados" />
             </p>
             <table class="resultados">
                 <caption>Tabla de resultados</caption>
@@ -64,6 +85,26 @@
                         </tr>
                     </tbody>
             </table>
+        </article>
+        <article>
+            <h2>Escribir el resultado de la suma de dos números</h2>
+            <p>
+                <script>
+                    document.write(
+                        "La suma de "+ x + "y" + y +"es igual a " + suma + ".");                   
+
+                </script>
+            </p>
+        </article>
+        <article>
+            <h2>Escribir el resultado del producto de dos números</h2>
+            <p>
+                <script>
+                    document.write(
+                        "El producto de " + p1 + " por " +  p2  + " es igual a  " + producto 
+                    );
+                </script>
+            </p>
         </article>
     </main>
     <footer></footer>
